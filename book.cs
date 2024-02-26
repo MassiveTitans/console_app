@@ -3,12 +3,12 @@ namespace book
 {
     class Book
     {
-            private int price;
+            private double price;
             private string book_name ;
             private string book_author;
 
 
-            public int Kitob_narxi {
+            public double Kitob_narxi {
                 get
                 {
                     return price;
@@ -40,7 +40,7 @@ namespace book
 
 
 
-            public Book(int narx  , string nomi , string muallif)
+             public Book(int narx  , string nomi , string muallif)
             {
                 Kitob_muallifi = muallif;
                 Kitob_narxi = narx;
@@ -61,7 +61,7 @@ namespace book
                 }
 
             double discount = price * (discountPercentage / 100);
-            price -= discount;
+            Kitob_narxi -= discount;
 
             Console.WriteLine($"Skidka qo'llandi! Yangi narx: {price}");
         }
