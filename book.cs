@@ -1,5 +1,5 @@
 
-namespace basics
+namespace book
 {
     class Book
     {
